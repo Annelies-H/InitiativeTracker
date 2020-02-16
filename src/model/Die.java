@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Die {
@@ -13,8 +15,16 @@ public class Die {
     }
 
 //Methods
-    public int roll() {
+    public Integer roll() {
         return generator.nextInt(nrOfSides) + 1;
+    }
+
+    public List<Integer> roll(int nrOfRolls) {
+        List<Integer> result = new ArrayList<>(nrOfRolls);
+        for (int i = 0; i < nrOfRolls; i++) {
+            result.add(roll());
+        }
+        return result;
     }
 
     public String toString() {
