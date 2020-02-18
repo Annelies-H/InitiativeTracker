@@ -1,8 +1,6 @@
 package model;
 
-public class Creature {
-    private int id;
-    private static int nextID = 1000000;
+public class Creature implements Comparable<Creature> {
     private String name;
     private int currentHP;
     private int initiative;
@@ -11,9 +9,12 @@ public class Creature {
 
 //Constructor
     public Creature() {
-        id = nextID++;
+        this("");
+    }
+
+    public Creature(String name) {
         stats = new Stats();
-        name = "";
+        this.name = name;
         remarks = "";
     }
 
@@ -21,11 +22,10 @@ public class Creature {
 
     /**
      * Set a new random intitative by rolling a D20 and adding the dexterity modifier.
-     * Initiative cannot negative.
      */
     public void rollInitiative() {
         Die d20 = new Die(20);
-        initiative = Math.max(0, d20.roll() + stats.getDexMod());
+        initiative = d20.roll() + stats.getDexMod();
     }
 
     /**
@@ -44,16 +44,18 @@ public class Creature {
         currentHP = stats.getMaxHP();
     }
 
+    @Override
+    public int compareTo(Creature otherCreature) {
+        return initiative - otherCreature.initiative;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
 
 //Getters
-    public int getId() {
-        return id;
-    }
-
-    public static int getNextID() {
-        return nextID;
-    }
-
     public String getName() {
         return name;
     }
@@ -70,32 +72,12 @@ public class Creature {
         return stats;
     }
 
-    public int getMaxHP() {
-        return stats.getMaxHP();
-    }
-
-    public int getDexMod() {
-        return stats.getDexMod();
-    }
-
-    public int getArmourClass() {
-        return stats.getArmorClass();
-    }
-
     public String getRemarks() {
         return remarks;
     }
 
 
 //Setters
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public static void setNextID(int nextID) {
-        Creature.nextID = nextID;
-    }
-
     public void setName(String name) {
         this.name = name;
     }

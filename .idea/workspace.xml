@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003ad0a7-2ea7-413f-9d9e-90ee8ed4420f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/Creature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Stats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/CreatureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Creature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Stats.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ADS-Eindopdracht2" />
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="JUnit.CreatureTest.compareTo">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="model.Launcher" />
       <module name="InitiativeTracker" />
@@ -48,6 +49,54 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatureTest.changeHP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InitiativeTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.CreatureTest" />
+      <option name="METHOD_NAME" value="changeHP" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatureTest.compareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InitiativeTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.CreatureTest" />
+      <option name="METHOD_NAME" value="compareTo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatureTest.rollInitiative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InitiativeTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.CreatureTest" />
+      <option name="METHOD_NAME" value="rollInitiative" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,61 +116,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DieTest.dieRollDistribution" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InitiativeTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.DieTest" />
-      <option name="METHOD_NAME" value="dieRollDistribution" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DieTest.dieToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InitiativeTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.DieTest" />
-      <option name="METHOD_NAME" value="dieToString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DieTest.multipleDistributions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InitiativeTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.DieTest" />
-      <option name="METHOD_NAME" value="multipleDistributions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreatureTest.compareTo" />
+        <item itemvalue="JUnit.CreatureTest.rollInitiative" />
+        <item itemvalue="JUnit.CreatureTest.changeHP" />
         <item itemvalue="Application.Launcher" />
         <item itemvalue="JUnit.DieTest" />
-        <item itemvalue="JUnit.DieTest.multipleDistributions" />
-        <item itemvalue="JUnit.DieTest.dieToString" />
-        <item itemvalue="JUnit.DieTest.dieRollDistribution" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +138,8 @@
       <updated>1581794905584</updated>
       <workItem from="1581794916115" duration="1933000" />
       <workItem from="1581848548948" duration="4759000" />
-      <workItem from="1582019564389" duration="4564000" />
+      <workItem from="1582019564389" duration="4733000" />
+      <workItem from="1582032859733" duration="6034000" />
     </task>
     <servers />
   </component>
@@ -145,30 +147,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="445" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1582022695547">
+    <state x="445" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1582033030326">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="445" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1582022695547" />
+    <state x="445" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1582033030326" />
     <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1582019816861">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1582019816861" />
-    <state width="1237" height="222" key="GridCell.Tab.0.bottom" timestamp="1582024174822">
+    <state width="1237" height="222" key="GridCell.Tab.0.bottom" timestamp="1582037488086">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="222" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582024174822" />
-    <state width="1237" height="222" key="GridCell.Tab.0.center" timestamp="1582024174822">
+    <state width="1237" height="222" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582037488086" />
+    <state width="1237" height="222" key="GridCell.Tab.0.center" timestamp="1582037488086">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="222" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1582024174822" />
-    <state width="1237" height="222" key="GridCell.Tab.0.left" timestamp="1582024174822">
+    <state width="1237" height="222" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1582037488086" />
+    <state width="1237" height="222" key="GridCell.Tab.0.left" timestamp="1582037488086">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="222" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1582024174822" />
-    <state width="1237" height="222" key="GridCell.Tab.0.right" timestamp="1582024174822">
+    <state width="1237" height="222" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1582037488086" />
+    <state width="1237" height="222" key="GridCell.Tab.0.right" timestamp="1582037488086">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="222" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1582024174822" />
+    <state width="1237" height="222" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1582037488086" />
     <state x="336" y="316" key="com.intellij.ide.util.TipDialog" timestamp="1581794927709">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
