@@ -13,7 +13,6 @@ public class Creature implements Comparable<Creature> {
     public Creature() {
         this(new Stats());
     }
-
     public Creature(Stats stats) {
         this(stats, 0, stats.getType(), stats.getMaxHP(), 0, "");
     }

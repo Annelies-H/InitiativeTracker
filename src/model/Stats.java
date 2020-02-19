@@ -8,7 +8,11 @@ public class Stats {
     private int dexMod;
 
 //Constructors
-    public Stats(String type, int maxHP, int armorClass, int dexMod, String remarks) {
+    public Stats() {
+        this("", 0, 0, 0);
+    }
+
+    public Stats(String type, int maxHP, int armorClass, int dexMod) {
         this.type = type;
         this.maxHP = maxHP;
         this.armorClass = armorClass;

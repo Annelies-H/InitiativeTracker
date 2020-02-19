@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Encounter {
+public class Encounter implements Comparable<Encounter> {
     private int id;
     private String name;
     private List<Creature> creatures;
@@ -80,6 +80,11 @@ public class Encounter {
 
     public String toString() {
         return name;
+    }
+
+    @Override
+    public int compareTo(Encounter other) {
+        return id - other.getId();
     }
 
 //Getters
