@@ -1,6 +1,8 @@
 package model;
 
 public class Creature implements Comparable<Creature> {
+    private int id;
+    private int nextID = 1;
     private String name;
     private int currentHP;
     private int initiative;
@@ -9,13 +11,20 @@ public class Creature implements Comparable<Creature> {
 
 //Constructor
     public Creature() {
-        this("");
+        this(new Stats());
     }
 
-    public Creature(String name) {
-        stats = new Stats();
+    public Creature(Stats stats) {
+        this(stats, 0, stats.getType(), stats.getMaxHP(), 0, "");
+    }
+
+    public Creature(Stats stats,  int id, String name, int currentHP, int initiative, String remarks) {
+        this.id = (id != 0) ? id : nextID++;
         this.name = name;
-        remarks = "";
+        this.currentHP = currentHP;
+        this.initiative = initiative;
+        this.stats = stats;
+        this.remarks = remarks;
     }
 
 //Methods
@@ -76,8 +85,11 @@ public class Creature implements Comparable<Creature> {
         return remarks;
     }
 
+    public int getId() {
+        return id;
+    }
 
-//Setters
+    //Setters
     public void setName(String name) {
         this.name = name;
     }

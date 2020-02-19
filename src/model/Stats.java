@@ -8,11 +8,6 @@ public class Stats {
     private int dexMod;
 
 //Constructors
-    public Stats() {
-        type = "";
-
-    }
-
     public Stats(String type, int maxHP, int armorClass, int dexMod, String remarks) {
         this.type = type;
         this.maxHP = maxHP;
