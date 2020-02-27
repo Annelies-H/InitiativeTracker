@@ -1,12 +1,20 @@
 package com.dnd.InitiativeTracker.model;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@Entity
 public class Encounter implements Comparable<Encounter> {
+    @Id
+    @GeneratedValue
     private int id;
+    @Column(nullable=false)
     private String name;
+    @Transient
     private List<Creature> creatures;
 
 //Constructors

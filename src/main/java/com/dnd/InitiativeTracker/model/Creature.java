@@ -1,29 +1,35 @@
 package com.dnd.InitiativeTracker.model;
 
+import javax.persistence.*;
+
+@Entity
 public class Creature implements Comparable<Creature> {
+    @Id
+    @GeneratedValue
     private int id;
-    private int nextID = 1;
+    @Column(nullable=false)
     private String name;
+    @Column(nullable=false)
     private Health hp;
+    @Transient
     private int initiative;
+    @Column(nullable=false)
     private Stats stats;
-    private String remarks;
 
 //Constructor
     public Creature() {
-        this(new Stats());
+        this(new Stats(), new Health());
     }
-    public Creature(Stats stats) {
-        this(stats, 0, stats.getType(), new Health(), 0, "");
+    public Creature(Stats stats, Health hp) {
+        this(stats, 0, stats.getType(), hp, 0);
     }
 
-    public Creature(Stats stats,  int id, String name, Health health, int initiative, String remarks) {
-        this.id = (id != 0) ? id : nextID++;
+    public Creature(Stats stats,  int id, String name, Health health, int initiative) {
+        this.id = id;
         this.name = name;
         this.hp = health;
         this.initiative = initiative;
         this.stats = stats;
-        this.remarks = remarks;
     }
 
 //Methods
@@ -60,10 +66,6 @@ public class Creature implements Comparable<Creature> {
         return stats;
     }
 
-    public String getRemarks() {
-        return remarks;
-    }
-
     public int getId() {
         return id;
     }
@@ -83,10 +85,6 @@ public class Creature implements Comparable<Creature> {
 
     public void setStats(Stats stats) {
         this.stats = stats;
-    }
-
-    public void setRemarks(String remarks) {
-        this.remarks = remarks;
     }
 
     public void setId(int id) {

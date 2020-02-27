@@ -1,7 +1,14 @@
 package com.dnd.InitiativeTracker.model;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.Transient;
+
+@Embeddable
 public class Health {
+    @Column(nullable=false)
     private int maxHP;
+    @Transient
     private int currentHP;
 
 //Constructors

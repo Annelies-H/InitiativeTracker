@@ -1,15 +1,26 @@
 package com.dnd.InitiativeTracker.model;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class User implements Comparable<User> {
+    @Id
+    @GeneratedValue
+    private int userID;
+    @Column(nullable=false)
     private String username;
+    @Column(nullable=false, unique=true)
     private String email;
+    @Column(nullable=false)
     private String password;
+    @Transient
     private List<Encounter> encounters;
 
 //Constructors
+    public User() {}
+
     public User(String username) {
         this.username = username;
         encounters = new ArrayList<>();

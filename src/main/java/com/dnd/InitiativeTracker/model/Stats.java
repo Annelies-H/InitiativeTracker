@@ -1,9 +1,16 @@
 package com.dnd.InitiativeTracker.model;
 
-public class Stats {
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.Id;
 
+@Embeddable
+public class Stats {
+    @Column(nullable=false)
     private String type;
+    @Column(nullable=false)
     private int armorClass;
+    @Column(nullable=false)
     private int dexMod;
 
 //Constructors
