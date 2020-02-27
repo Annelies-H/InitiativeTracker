@@ -1,10 +1,8 @@
-package model;
-
-import org.junit.Test;
+package com.dnd.InitiativeTracker.model;
 
 import java.util.Arrays;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CreatureTest {
 
@@ -12,17 +10,17 @@ public class CreatureTest {
     public void changeHP() {
         Creature creature = new Creature();
         creature.getStats().setMaxHP(20);
-        assertEquals("currentHP should initialise at 0",0, creature.getCurrentHP());
+        assertEquals(0, creature.getCurrentHP(), "currentHP should initialise at 0");
         creature.resetHP();
-        assertEquals("reset should return currentHP to its maximum", 20,creature.getCurrentHP());
+        assertEquals(20,creature.getCurrentHP(), "reset should return currentHP to its maximum");
         creature.adjustHP(-5);
-        assertEquals("lowering HP", 15, creature.getCurrentHP());
+        assertEquals(15, creature.getCurrentHP(), "lowering HP" );
         creature.adjustHP(2);
-        assertEquals("adding HP", 17, creature.getCurrentHP());
+        assertEquals(17, creature.getCurrentHP(), "adding HP");
         creature.adjustHP(10);
-        assertEquals("currentHP should not be higher than maxHP", 20, creature.getCurrentHP());
+        assertEquals( 20, creature.getCurrentHP(), "currentHP should not be higher than maxHP");
         creature.adjustHP(-100);
-        assertEquals("currentHP should not fall below", 0, creature.getCurrentHP());
+        assertEquals(0, creature.getCurrentHP(), "currentHP should not fall below");
     }
 
     @Test

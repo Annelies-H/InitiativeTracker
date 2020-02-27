@@ -1,102 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="003ad0a7-2ea7-413f-9d9e-90ee8ed4420f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/model/CreatureTest.java" afterDir="false" />
+    <list default="true" id="96183473-71b3-40df-886b-9b221f4d6caa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Creature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Die.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Encounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/CreatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/DieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Stats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitiativeTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/InitiativeTracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InitiativeTracker/model/Creature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InitiativeTracker/model/Die.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InitiativeTracker/model/Launcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InitiativeTracker/model/Stats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/InitiativeTracker/model/CreatureTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/InitiativeTracker/model/DieTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Creature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Die.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Encounter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Stats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model/CreatureTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model/DieTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1XrCcBvsgrulAZjlImfZKQwvBQb" />
+  <component name="ProjectId" id="1YOX1TrYeCtDqQUshriju3MAXgr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ADS-Eindopdracht2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker" />
   </component>
-  <component name="RunManager" selected="JUnit.CreatureTest.compareTo">
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.Launcher" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\InitiativeTracker\src\test\java\com\dnd\InitiativeTracker" />
+      <recent name="D:\Code\InitiativeTracker\src\main\java\com\dnd\InitiativeTracker" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.InitiativeTrackerApplication">
+    <configuration name="CreatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InitiativeTracker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="com.dnd.InitiativeTracker.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreatureTest.changeHP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InitiativeTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CreatureTest" />
-      <option name="METHOD_NAME" value="changeHP" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreatureTest.compareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InitiativeTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CreatureTest" />
-      <option name="METHOD_NAME" value="compareTo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreatureTest.rollInitiative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InitiativeTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CreatureTest" />
-      <option name="METHOD_NAME" value="rollInitiative" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.dnd.InitiativeTracker.model" />
+      <option name="MAIN_CLASS_NAME" value="com.dnd.InitiativeTracker.model.CreatureTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,23 +83,27 @@
       <module name="InitiativeTracker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="com.dnd.InitiativeTracker.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.DieTest" />
+      <option name="PACKAGE_NAME" value="com.dnd.InitiativeTracker.model" />
+      <option name="MAIN_CLASS_NAME" value="com.dnd.InitiativeTracker.model.DieTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InitiativeTrackerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="InitiativeTracker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dnd.InitiativeTracker.InitiativeTrackerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreatureTest.compareTo" />
-        <item itemvalue="JUnit.CreatureTest.rollInitiative" />
-        <item itemvalue="JUnit.CreatureTest.changeHP" />
-        <item itemvalue="Application.Launcher" />
+        <item itemvalue="JUnit.CreatureTest" />
         <item itemvalue="JUnit.DieTest" />
       </list>
     </recent_temporary>
@@ -131,15 +113,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="003ad0a7-2ea7-413f-9d9e-90ee8ed4420f" name="Default Changelist" comment="" />
-      <created>1581794905584</created>
+      <changelist id="96183473-71b3-40df-886b-9b221f4d6caa" name="Default Changelist" comment="" />
+      <created>1582814399087</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1581794905584</updated>
-      <workItem from="1581794916115" duration="1933000" />
-      <workItem from="1581848548948" duration="4759000" />
-      <workItem from="1582019564389" duration="4733000" />
-      <workItem from="1582032859733" duration="6034000" />
+      <updated>1582814399087</updated>
+      <workItem from="1582814410864" duration="3377000" />
     </task>
     <servers />
   </component>
@@ -147,37 +126,41 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="445" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1582033030326">
+    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1582816775797">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="445" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1582033030326" />
-    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1582019816861">
+    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1582816775797" />
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1582818062241">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1582019816861" />
-    <state width="1237" height="222" key="GridCell.Tab.0.bottom" timestamp="1582037488086">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582818062241" />
+    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1582818062241">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="222" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582037488086" />
-    <state width="1237" height="222" key="GridCell.Tab.0.center" timestamp="1582037488086">
+    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1582818062241" />
+    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1582818062241">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="222" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1582037488086" />
-    <state width="1237" height="222" key="GridCell.Tab.0.left" timestamp="1582037488086">
+    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1582818062241" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1582818062241">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="222" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1582037488086" />
-    <state width="1237" height="222" key="GridCell.Tab.0.right" timestamp="1582037488086">
+    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1582818062241" />
+    <state width="1237" height="263" key="GridCell.Tab.1.bottom" timestamp="1582817928205">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="222" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1582037488086" />
-    <state x="336" y="316" key="com.intellij.ide.util.TipDialog" timestamp="1581794927709">
+    <state width="1237" height="263" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582817928205" />
+    <state width="1237" height="263" key="GridCell.Tab.1.center" timestamp="1582817928205">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="336" y="316" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1581794927709" />
-    <state x="344" y="385" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581849309994">
+    <state width="1237" height="263" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1582817928205" />
+    <state width="1237" height="263" key="GridCell.Tab.1.left" timestamp="1582817928205">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="344" y="385" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.984@0.0.1280.984" timestamp="1581849309994" />
+    <state width="1237" height="263" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1582817928205" />
+    <state width="1237" height="263" key="GridCell.Tab.1.right" timestamp="1582817928205">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1582817928205" />
   </component>
 </project>

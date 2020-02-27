@@ -1,4 +1,4 @@
-package model;
+package com.dnd.InitiativeTracker.model;
 
 public class Creature implements Comparable<Creature> {
     private int id;
