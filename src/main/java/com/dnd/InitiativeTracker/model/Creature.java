@@ -4,7 +4,7 @@ public class Creature implements Comparable<Creature> {
     private int id;
     private int nextID = 1;
     private String name;
-    private int currentHP;
+    private Health hp;
     private int initiative;
     private Stats stats;
     private String remarks;
@@ -14,13 +14,13 @@ public class Creature implements Comparable<Creature> {
         this(new Stats());
     }
     public Creature(Stats stats) {
-        this(stats, 0, stats.getType(), stats.getMaxHP(), 0, "");
+        this(stats, 0, stats.getType(), new Health(), 0, "");
     }
 
-    public Creature(Stats stats,  int id, String name, int currentHP, int initiative, String remarks) {
+    public Creature(Stats stats,  int id, String name, Health health, int initiative, String remarks) {
         this.id = (id != 0) ? id : nextID++;
         this.name = name;
-        this.currentHP = currentHP;
+        this.hp = health;
         this.initiative = initiative;
         this.stats = stats;
         this.remarks = remarks;
@@ -34,22 +34,6 @@ public class Creature implements Comparable<Creature> {
     public void rollInitiative() {
         Die d20 = new Die(20);
         initiative = d20.roll() + stats.getDexMod();
-    }
-
-    /**
-     * Adjust the currentHP by a given amount.
-     * Where the new currentHP cannot be higher than the maximum HP or lower than 0;
-     * @param hpChange value by which the HP is changed
-     */
-    public void adjustHP(int hpChange) {
-        currentHP = Math.min(stats.getMaxHP(), Math.max(0, currentHP + hpChange));
-    }
-
-    /**
-     * Reset the currentHP to the creatures maximum HP
-     */
-    public void resetHP() {
-        currentHP = stats.getMaxHP();
     }
 
     @Override
@@ -68,10 +52,6 @@ public class Creature implements Comparable<Creature> {
         return name;
     }
 
-    public int getCurrentHP() {
-        return currentHP;
-    }
-
     public int getInitiative() {
         return initiative;
     }
@@ -88,13 +68,13 @@ public class Creature implements Comparable<Creature> {
         return id;
     }
 
+    public Health getHP() {
+        return hp;
+    }
+
     //Setters
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setCurrentHP(int currentHP) {
-        this.currentHP = Math.max(0, currentHP);
     }
 
     public void setInitiative(int initiative) {
@@ -107,5 +87,13 @@ public class Creature implements Comparable<Creature> {
 
     public void setRemarks(String remarks) {
         this.remarks = remarks;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setHP(Health hp) {
+        this.hp = hp;
     }
 }

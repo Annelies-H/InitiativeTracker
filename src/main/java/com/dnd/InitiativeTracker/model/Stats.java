@@ -3,18 +3,16 @@ package com.dnd.InitiativeTracker.model;
 public class Stats {
 
     private String type;
-    private int maxHP;
     private int armorClass;
     private int dexMod;
 
 //Constructors
     public Stats() {
-        this("", 0, 0, 0);
+        this("", 0,  0);
     }
 
-    public Stats(String type, int maxHP, int armorClass, int dexMod) {
+    public Stats(String type, int armorClass, int dexMod) {
         this.type = type;
-        this.maxHP = maxHP;
         this.armorClass = armorClass;
         this.dexMod = dexMod;
     }
@@ -29,10 +27,6 @@ public class Stats {
         return type;
     }
 
-    public int getMaxHP() {
-        return maxHP;
-    }
-
     public int getArmorClass() {
         return armorClass;
     }
@@ -45,10 +39,6 @@ public class Stats {
 //Setters
     public void setType(String type) {
         this.type = type;
-    }
-
-    public void setMaxHP(int maxHP) {
-        this.maxHP = Math.max(0, maxHP);
     }
 
     public void setArmorClass(int armorClass) {
