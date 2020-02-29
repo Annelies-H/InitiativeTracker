@@ -7,46 +7,38 @@ import javax.persistence.Id;
 @Embeddable
 public class Stats {
     @Column(nullable=false)
-    private String type;
-    @Column(nullable=false)
     private int armorClass;
+    @Column(nullable=false)
+    private int maxHP;
     @Column(nullable=false)
     private int dexMod;
 
 //Constructors
     public Stats() {
-        this("", 0,  0);
     }
 
-    public Stats(String type, int armorClass, int dexMod) {
-        this.type = type;
+    public Stats(int armorClass, int dexMod, int maxHP) {
         this.armorClass = armorClass;
         this.dexMod = dexMod;
-    }
-
-//Methods
-    public String toString() {
-        return type;
+        this.maxHP = maxHP;
     }
 
 //Getters
-    public String getType() {
-        return type;
-    }
 
     public int getArmorClass() {
         return armorClass;
+    }
+
+    public int getMaxHP() {
+        return maxHP;
     }
 
     public int getDexMod() {
         return dexMod;
     }
 
+    //Setters
 
-//Setters
-    public void setType(String type) {
-        this.type = type;
-    }
 
     public void setArmorClass(int armorClass) {
         this.armorClass = Math.max(0, armorClass);
@@ -54,5 +46,9 @@ public class Stats {
 
     public void setDexMod(int dexMod) {
         this.dexMod = dexMod;
+    }
+
+    public void setMaxHP(int maxHP) {
+        this.maxHP = maxHP;
     }
 }

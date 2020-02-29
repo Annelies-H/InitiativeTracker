@@ -65,7 +65,7 @@ public class Encounter implements Comparable<Encounter> {
      */
     public void resetHP() {
         for (Creature creature : creatures) {
-            creature.getHP().resetHP();
+            creature.resetHP();
         }
     }
 

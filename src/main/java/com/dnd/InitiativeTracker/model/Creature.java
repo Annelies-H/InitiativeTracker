@@ -6,28 +6,25 @@ import javax.persistence.*;
 public class Creature implements Comparable<Creature> {
     @Id
     @GeneratedValue
-    private int id;
+    @Column(nullable=false)
+    private int id=0;
     @Column(nullable=false)
     private String name;
-    @Column(nullable=false)
-    private Health hp;
+    @Transient
+    private int currentHP;
     @Transient
     private int initiative;
+    @Embedded
     @Column(nullable=false)
     private Stats stats;
 
 //Constructor
-    public Creature() {
-        this(new Stats(), new Health());
-    }
-    public Creature(Stats stats, Health hp) {
-        this(stats, 0, stats.getType(), hp, 0);
-    }
+    public Creature() { }
 
-    public Creature(Stats stats,  int id, String name, Health health, int initiative) {
+    public Creature(Stats stats,  int id, String name, int currentHP, int initiative) {
         this.id = id;
         this.name = name;
-        this.hp = health;
+        this.currentHP = currentHP;
         this.initiative = initiative;
         this.stats = stats;
     }
@@ -40,6 +37,22 @@ public class Creature implements Comparable<Creature> {
     public void rollInitiative() {
         Die d20 = new Die(20);
         initiative = d20.roll() + stats.getDexMod();
+    }
+
+    /**
+     * Adjust the currentHP by a given amount.
+     * Where the new currentHP cannot be higher than the maximum HP or lower than 0;
+     * @param hpChange value by which the HP is changed
+     */
+    public void adjustHP(int hpChange) {
+        currentHP = Math.min(stats.getMaxHP(), Math.max(0, currentHP + hpChange));
+    }
+
+    /**
+     * Reset the currentHP to the creatures maximum HP
+     */
+    public void resetHP() {
+        currentHP = stats.getMaxHP();
     }
 
     @Override
@@ -70,8 +83,8 @@ public class Creature implements Comparable<Creature> {
         return id;
     }
 
-    public Health getHP() {
-        return hp;
+    public int getCurrentHP() {
+        return currentHP;
     }
 
     //Setters
@@ -91,7 +104,7 @@ public class Creature implements Comparable<Creature> {
         this.id = id;
     }
 
-    public void setHP(Health hp) {
-        this.hp = hp;
+    public void setCurrentHP(int currentHP) {
+        this.currentHP = currentHP;
     }
 }
