@@ -7,7 +7,7 @@ public class Creature implements Comparable<Creature> {
     @Id
     @GeneratedValue
     @Column(nullable=false)
-    private int id=0;
+    private int creatureID =0;
     @Column(nullable=false)
     private String name;
     @Transient
@@ -21,8 +21,8 @@ public class Creature implements Comparable<Creature> {
 //Constructor
     public Creature() { }
 
-    public Creature(Stats stats,  int id, String name, int currentHP, int initiative) {
-        this.id = id;
+    public Creature(Stats stats, int creatureID, String name, int currentHP, int initiative) {
+        this.creatureID = creatureID;
         this.name = name;
         this.currentHP = currentHP;
         this.initiative = initiative;
@@ -79,8 +79,8 @@ public class Creature implements Comparable<Creature> {
         return stats;
     }
 
-    public int getId() {
-        return id;
+    public int getCreatureID() {
+        return creatureID;
     }
 
     public int getCurrentHP() {
@@ -100,8 +100,8 @@ public class Creature implements Comparable<Creature> {
         this.stats = stats;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCreatureID(int id) {
+        this.creatureID = id;
     }
 
     public void setCurrentHP(int currentHP) {

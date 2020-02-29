@@ -1,7 +1,5 @@
 package com.dnd.InitiativeTracker.model;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,11 +9,14 @@ import java.util.List;
 public class Encounter implements Comparable<Encounter> {
     @Id
     @GeneratedValue
-    private int id;
+    private int encounterID;
     @Column(nullable=false)
     private String name;
-    @Transient
+    @ManyToMany
     private List<Creature> creatures;
+    @ManyToOne
+    @JoinColumn(name="userid", nullable=false)
+    private User user;
 
 //Constructors
     public Encounter() {
@@ -26,8 +27,8 @@ public class Encounter implements Comparable<Encounter> {
         this(name, 0);
     }
 
-    public Encounter(String name, int id) {
-        this.id = id;
+    public Encounter(String name, int encounterID) {
+        this.encounterID = encounterID;
         this.name = name;
         creatures = new ArrayList<>();
     }
@@ -49,10 +50,10 @@ public class Encounter implements Comparable<Encounter> {
      * @return true = creature not in the encounter, false = creature in the encounter
      */
     public boolean doesNotContainCreature(Creature creature) {
-        int id = creature.getId();
+        int id = creature.getCreatureID();
         boolean result = true;
         for (Creature member : creatures) {
-            if (member.getId() == id) {
+            if (member.getCreatureID() == id) {
                 result = false;
                 break;
             }
@@ -92,12 +93,12 @@ public class Encounter implements Comparable<Encounter> {
 
     @Override
     public int compareTo(Encounter other) {
-        return id - other.getId();
+        return encounterID - other.getEncounterID();
     }
 
 //Getters
-    public int getId() {
-        return id;
+    public int getEncounterID() {
+        return encounterID;
     }
 
     public String getName() {
@@ -109,8 +110,8 @@ public class Encounter implements Comparable<Encounter> {
     }
 
 //setters
-    public void setId(int id) {
-        this.id = id;
+    public void setEncounterID(int id) {
+        this.encounterID = id;
     }
 
     public void setName(String name) {

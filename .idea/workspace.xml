@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96183473-71b3-40df-886b-9b221f4d6caa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/dao/CreatureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/dao/EncounterDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/dao/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitiativeTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/InitiativeTracker.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Creature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Encounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Stats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/CreatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/CreatureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Health.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -26,7 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YOX1TrYeCtDqQUshriju3MAXgr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -119,7 +123,7 @@
       <updated>1582814399087</updated>
       <workItem from="1582814410864" duration="7332000" />
       <workItem from="1582824016633" duration="110000" />
-      <workItem from="1582966193090" duration="1680000" />
+      <workItem from="1582966193090" duration="3973000" />
     </task>
     <servers />
   </component>
@@ -131,41 +135,45 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="445" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1582968917611" />
+    <state x="234" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582971371019">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="234" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.984@0.0.1280.984" timestamp="1582971371019" />
     <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1582968480843">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1582968480843" />
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1582969467283">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1582972225630">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582969467283" />
-    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1582969467283">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582972225630" />
+    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1582972225630">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1582969467283" />
-    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1582969467283">
+    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1582972225630" />
+    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1582972225630">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1582969467283" />
-    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1582969467283">
+    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1582972225630" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1582972225630">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1582969467283" />
-    <state width="1237" height="263" key="GridCell.Tab.1.bottom" timestamp="1582969467283">
+    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1582972225630" />
+    <state width="1237" height="263" key="GridCell.Tab.1.bottom" timestamp="1582972225630">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582969467283" />
-    <state width="1237" height="263" key="GridCell.Tab.1.center" timestamp="1582969467283">
+    <state width="1237" height="263" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582972225630" />
+    <state width="1237" height="263" key="GridCell.Tab.1.center" timestamp="1582972225630">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1582969467283" />
-    <state width="1237" height="263" key="GridCell.Tab.1.left" timestamp="1582969467283">
+    <state width="1237" height="263" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1582972225630" />
+    <state width="1237" height="263" key="GridCell.Tab.1.left" timestamp="1582972225630">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1582969467283" />
-    <state width="1237" height="263" key="GridCell.Tab.1.right" timestamp="1582969467283">
+    <state width="1237" height="263" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1582972225630" />
+    <state width="1237" height="263" key="GridCell.Tab.1.right" timestamp="1582972225630">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1582969467283" />
+    <state width="1237" height="263" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1582972225630" />
   </component>
 </project>

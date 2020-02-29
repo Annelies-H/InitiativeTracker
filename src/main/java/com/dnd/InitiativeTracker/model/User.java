@@ -15,7 +15,7 @@ public class User implements Comparable<User> {
     private String email;
     @Column(nullable=false)
     private String password;
-    @Transient
+    @OneToMany(mappedBy="user")
     private List<Encounter> encounters;
 
 //Constructors
