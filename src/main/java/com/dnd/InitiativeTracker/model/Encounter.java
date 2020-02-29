@@ -9,13 +9,19 @@ import java.util.List;
 public class Encounter implements Comparable<Encounter> {
     @Id
     @GeneratedValue
+    @Column(name="encounter_id", nullable=false, unique=true)
     private int encounterID;
-    @Column(nullable=false)
+    @Column(name="encounter_name", nullable=false)
     private String name;
     @ManyToMany
+    @JoinTable(
+            name = "encounter_creature",
+            joinColumns = { @JoinColumn(name = "encounter_id") },
+            inverseJoinColumns = { @JoinColumn(name = "creature_id") }
+    )
     private List<Creature> creatures;
     @ManyToOne
-    @JoinColumn(name="userid", nullable=false)
+    @JoinColumn(name="user_id", nullable=false)
     private User user;
 
 //Constructors

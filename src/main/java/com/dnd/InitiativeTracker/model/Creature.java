@@ -6,9 +6,9 @@ import javax.persistence.*;
 public class Creature implements Comparable<Creature> {
     @Id
     @GeneratedValue
-    @Column(nullable=false)
+    @Column(name="creature_id", nullable=false, unique=true)
     private int creatureID =0;
-    @Column(nullable=false)
+    @Column(name="creature_name", nullable=false)
     private String name;
     @Transient
     private int currentHP;

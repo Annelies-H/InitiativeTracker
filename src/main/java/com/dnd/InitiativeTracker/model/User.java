@@ -8,6 +8,7 @@ import java.util.List;
 public class User implements Comparable<User> {
     @Id
     @GeneratedValue
+    @Column(name="user_id", nullable=false, unique=true)
     private int userID;
     @Column(nullable=false)
     private String username;

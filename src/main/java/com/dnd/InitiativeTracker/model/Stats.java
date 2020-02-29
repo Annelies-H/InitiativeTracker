@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Stats {
     @Column(nullable=false)
     private int armorClass;
-    @Column(nullable=false)
+    @Column(name="max_hp", nullable=false)
     private int maxHP;
     @Column(nullable=false)
     private int dexMod;
