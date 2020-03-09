@@ -10,9 +10,7 @@ public class Launcher {
         System.out.println(test.getInitiative());
         test.rollInitiative();
         System.out.println(test.getInitiative());
-        test.adjustHP(10);
-        System.out.println(test.getCurrentHP());
-        test.getStats().setMaxHP(20);
-
+        test.getHealth().adjustHP(10);
+        System.out.println(test.getHealth().getCurrentHP());
     }
 }

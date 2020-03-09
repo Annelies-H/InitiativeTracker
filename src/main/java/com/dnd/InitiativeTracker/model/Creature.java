@@ -10,8 +10,8 @@ public class Creature implements Comparable<Creature> {
     private int creatureID =0;
     @Column(name="creature_name", nullable=false)
     private String name;
-    @Transient
-    private int currentHP;
+    @Embedded
+    private Health health;
     @Transient
     private int initiative;
     @Embedded
@@ -21,10 +21,10 @@ public class Creature implements Comparable<Creature> {
 //Constructor
     public Creature() { }
 
-    public Creature(Stats stats, int creatureID, String name, int currentHP, int initiative) {
+    public Creature(Stats stats, int creatureID, String name, int maxHP, int initiative) {
         this.creatureID = creatureID;
         this.name = name;
-        this.currentHP = currentHP;
+        this.health = new Health(maxHP);
         this.initiative = initiative;
         this.stats = stats;
     }
@@ -37,22 +37,6 @@ public class Creature implements Comparable<Creature> {
     public void rollInitiative() {
         Die d20 = new Die(20);
         initiative = d20.roll() + stats.getDexMod();
-    }
-
-    /**
-     * Adjust the currentHP by a given amount.
-     * Where the new currentHP cannot be higher than the maximum HP or lower than 0;
-     * @param hpChange value by which the HP is changed
-     */
-    public void adjustHP(int hpChange) {
-        currentHP = Math.min(stats.getMaxHP(), Math.max(0, currentHP + hpChange));
-    }
-
-    /**
-     * Reset the currentHP to the creatures maximum HP
-     */
-    public void resetHP() {
-        currentHP = stats.getMaxHP();
     }
 
     @Override
@@ -83,8 +67,8 @@ public class Creature implements Comparable<Creature> {
         return creatureID;
     }
 
-    public int getCurrentHP() {
-        return currentHP;
+    public Health getHealth() {
+        return health;
     }
 
     //Setters
@@ -104,7 +88,7 @@ public class Creature implements Comparable<Creature> {
         this.creatureID = id;
     }
 
-    public void setCurrentHP(int currentHP) {
-        this.currentHP = currentHP;
+    public void setHealth(Health health) {
+        this.health = health;
     }
 }
