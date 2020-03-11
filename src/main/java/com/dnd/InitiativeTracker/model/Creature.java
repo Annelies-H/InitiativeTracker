@@ -1,6 +1,7 @@
 package com.dnd.InitiativeTracker.model;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 public class Creature implements Comparable<Creature> {
@@ -39,18 +40,37 @@ public class Creature implements Comparable<Creature> {
         initiative = d20.roll() + stats.getDexMod();
     }
 
-    @Override
-    public int compareTo(Creature otherCreature) {
-        return initiative - otherCreature.initiative;
-    }
+
 
     @Override
     public String toString() {
         return name;
     }
 
+//Comparison
+    @Override
+    public int compareTo(Creature otherCreature) {
+        return initiative - otherCreature.initiative;
+    }
 
-//Getters
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Creature creature = (Creature) o;
+        return creatureID == creature.creatureID &&
+                initiative == creature.initiative &&
+                name.equals(creature.name) &&
+                health.equals(creature.health) &&
+                stats.equals(creature.stats);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(creatureID, name, health, initiative, stats);
+    }
+
+    //Getters
     public String getName() {
         return name;
     }

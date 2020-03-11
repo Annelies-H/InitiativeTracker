@@ -2,6 +2,7 @@ package com.dnd.InitiativeTracker.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
 public class Die {
@@ -31,7 +32,25 @@ public class Die {
         return "D" + nrOfSides;
     }
 
-//Getters
+
+//Comparison
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Die die = (Die) o;
+        return nrOfSides == die.nrOfSides &&
+                Objects.equals(generator, die.generator);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nrOfSides, generator);
+    }
+
+    //Getters
     public int getNrOfSides() {
         return nrOfSides;
     }

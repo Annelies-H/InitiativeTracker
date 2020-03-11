@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96183473-71b3-40df-886b-9b221f4d6caa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Health.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/HealthTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitiativeTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/InitiativeTracker.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Die.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Encounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Health.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Health.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Stats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/CreatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/CreatureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +181,9 @@
       <workItem from="1582814410864" duration="7332000" />
       <workItem from="1582824016633" duration="110000" />
       <workItem from="1582966193090" duration="5288000" />
-      <workItem from="1583760538260" duration="4273000" />
+      <workItem from="1583760538260" duration="5840000" />
+      <workItem from="1583768603046" duration="274000" />
+      <workItem from="1583943073252" duration="1368000" />
     </task>
     <servers />
   </component>
@@ -201,11 +201,11 @@
     </state>
     <state x="232" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1582973697497" />
     <state x="248" y="45" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583765831644" />
-    <state x="475" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1583765082187">
+    <state x="475" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1583944986774">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="445" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1582968917611" />
-    <state x="475" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583765082187" />
+    <state x="475" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583944986774" />
     <state x="234" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582971371019">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -214,46 +214,46 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1582968480843" />
-    <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1583765848026">
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1583768065116">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="296" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583765848026" />
-    <state width="1323" height="296" key="GridCell.Tab.0.center" timestamp="1583765848026">
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583768065116" />
+    <state width="1323" height="296" key="GridCell.Tab.0.center" timestamp="1583768065116">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="296" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583765848026" />
-    <state width="1323" height="296" key="GridCell.Tab.0.left" timestamp="1583765848026">
+    <state width="1323" height="296" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583768065116" />
+    <state width="1323" height="296" key="GridCell.Tab.0.left" timestamp="1583768065116">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="296" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583765848026" />
-    <state width="1323" height="296" key="GridCell.Tab.0.right" timestamp="1583765848026">
+    <state width="1323" height="296" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583768065116" />
+    <state width="1323" height="296" key="GridCell.Tab.0.right" timestamp="1583768065116">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="296" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583765848026" />
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1583765848011">
+    <state width="1323" height="296" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583768065116" />
+    <state width="1323" height="217" key="GridCell.Tab.1.bottom" timestamp="1583768065054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583765848011" />
-    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1583765848011">
+    <state width="1323" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583768065054" />
+    <state width="1323" height="217" key="GridCell.Tab.1.center" timestamp="1583768065054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583765848011" />
-    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1583765848011">
+    <state width="1323" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583768065054" />
+    <state width="1323" height="217" key="GridCell.Tab.1.left" timestamp="1583768065054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583765848011" />
-    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1583765848011">
+    <state width="1323" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583768065054" />
+    <state width="1323" height="217" key="GridCell.Tab.1.right" timestamp="1583768065054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583765848011" />
+    <state width="1323" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583768065054" />
     <state x="453" y="82" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583762110752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

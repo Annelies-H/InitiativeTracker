@@ -3,6 +3,7 @@ package com.dnd.InitiativeTracker.model;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Id;
+import java.util.Objects;
 
 @Embeddable
 public class Stats {
@@ -20,6 +21,26 @@ public class Stats {
         this.dexMod = dexMod;
     }
 
+//Methods
+
+
+//Comparison
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Stats stats = (Stats) o;
+        return armorClass == stats.armorClass &&
+                dexMod == stats.dexMod;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(armorClass, dexMod);
+    }
+
+
 //Getters
 
     public int getArmorClass() {
@@ -30,7 +51,7 @@ public class Stats {
         return dexMod;
     }
 
-    //Setters
+//Setters
 
 
     public void setArmorClass(int armorClass) {

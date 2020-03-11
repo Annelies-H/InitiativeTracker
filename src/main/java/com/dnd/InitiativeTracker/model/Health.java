@@ -3,6 +3,7 @@ package com.dnd.InitiativeTracker.model;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Transient;
+import java.util.Objects;
 
 @Embeddable
 public class Health {
@@ -39,7 +40,22 @@ public class Health {
         currentHP = maxHP;
     }
 
-//getters
+//comparison
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Health health = (Health) o;
+        return maxHP == health.maxHP &&
+                currentHP == health.currentHP;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(maxHP, currentHP);
+    }
+
+    //getters
     public int getMaxHP() {
         return maxHP;
     }

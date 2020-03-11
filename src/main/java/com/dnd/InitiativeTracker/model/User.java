@@ -3,9 +3,10 @@ package com.dnd.InitiativeTracker.model;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
-public class User implements Comparable<User> {
+public class User {
     @Id
     @GeneratedValue
     @Column(name="user_id", nullable=false, unique=true)
@@ -52,7 +53,19 @@ public class User implements Comparable<User> {
     }
 
     @Override
-    public int compareTo(User other) {
-        return email.compareTo(other.email);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return userID == user.userID &&
+                username.equals(user.username) &&
+                email.equals(user.email) &&
+                password.equals(user.password) &&
+                encounters.equals(user.encounters);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(userID, username, email, password, encounters);
     }
 }

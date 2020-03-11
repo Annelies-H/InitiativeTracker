@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 public class Encounter implements Comparable<Encounter> {
@@ -102,7 +103,23 @@ public class Encounter implements Comparable<Encounter> {
         return encounterID - other.getEncounterID();
     }
 
-//Getters
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Encounter encounter = (Encounter) o;
+        return encounterID == encounter.encounterID &&
+                name.equals(encounter.name) &&
+                creatures.equals(encounter.creatures) &&
+                user.equals(encounter.user);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(encounterID, name, creatures, user);
+    }
+
+    //Getters
     public int getEncounterID() {
         return encounterID;
     }
