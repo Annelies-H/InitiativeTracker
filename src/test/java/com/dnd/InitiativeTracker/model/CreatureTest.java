@@ -3,6 +3,8 @@ package com.dnd.InitiativeTracker.model;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class CreatureTest {
 
@@ -22,6 +24,5 @@ public class CreatureTest {
         Creature[] expected = {zero, six, ten, anotherTen, fifteen};
         assertArrayEquals(expected, creatures);
     }
-
 
 }

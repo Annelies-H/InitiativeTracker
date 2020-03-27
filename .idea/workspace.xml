@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96183473-71b3-40df-886b-9b221f4d6caa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/UserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/EncounterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InitiativeTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/InitiativeTracker.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/CreatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dnd/InitiativeTracker/model/CreatureTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +77,8 @@
       <recent name="D:\Code\InitiativeTracker\src\main\java\com\dnd\InitiativeTracker" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryTest">
-    <configuration name="CreatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EncounterTest.adjustAndResetHealthIntegrationTest">
+    <configuration name="CreatureTest.rollInitiative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InitiativeTracker" />
       <extension name="coverage">
         <pattern>
@@ -90,7 +88,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dnd.InitiativeTracker.model" />
       <option name="MAIN_CLASS_NAME" value="com.dnd.InitiativeTracker.model.CreatureTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="rollInitiative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EncounterTest.adjustAndResetHealthIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InitiativeTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dnd.InitiativeTracker.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dnd.InitiativeTracker.model" />
+      <option name="MAIN_CLASS_NAME" value="com.dnd.InitiativeTracker.model.EncounterTest" />
+      <option name="METHOD_NAME" value="adjustAndResetHealthIntegrationTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,22 +141,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest.whenFindByName_thenReturnEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InitiativeTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dnd.InitiativeTracker.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dnd.InitiativeTracker.model" />
-      <option name="MAIN_CLASS_NAME" value="com.dnd.InitiativeTracker.model.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="whenFindByName_thenReturnEmployee" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserRepositoryTest.whenFindByName_thenReturnUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InitiativeTracker" />
       <extension name="coverage">
@@ -167,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EncounterTest.adjustAndResetHealthIntegrationTest" />
+        <item itemvalue="JUnit.CreatureTest.rollInitiative" />
         <item itemvalue="JUnit.UserRepositoryTest" />
         <item itemvalue="JUnit.UserRepositoryTest.whenFindByName_thenReturnUser" />
         <item itemvalue="JUnit.UserRepositoryTest.findByUsername" />
-        <item itemvalue="JUnit.CreatureTest" />
-        <item itemvalue="JUnit.UserRepositoryTest.whenFindByName_thenReturnEmployee" />
       </list>
     </recent_temporary>
   </component>
@@ -194,6 +193,7 @@
       <workItem from="1585229144923" duration="1222000" />
       <workItem from="1585306104384" duration="684000" />
       <workItem from="1585310587762" duration="6807000" />
+      <workItem from="1585322861014" duration="4904000" />
     </task>
     <servers />
   </component>
@@ -224,26 +224,26 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1582968480843" />
-    <state width="1323" height="84" key="GridCell.Tab.0.bottom" timestamp="1585319386121">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1585328430241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="84" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585319386121" />
-    <state width="1323" height="84" key="GridCell.Tab.0.center" timestamp="1585319386121">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585328430241" />
+    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1585328430241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="84" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585319386121" />
-    <state width="1323" height="84" key="GridCell.Tab.0.left" timestamp="1585319386121">
+    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585328430241" />
+    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1585328430241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="84" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585319386121" />
-    <state width="1323" height="84" key="GridCell.Tab.0.right" timestamp="1585319386121">
+    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585328430241" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1585328430241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1582973850562" />
-    <state width="1323" height="84" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585319386121" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585328430241" />
     <state width="1323" height="84" key="GridCell.Tab.1.bottom" timestamp="1585319386121">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
