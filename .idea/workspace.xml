@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="96183473-71b3-40df-886b-9b221f4d6caa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Die.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Encounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Health.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Health.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/Stats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/dao/CreatureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/repository/CreatureRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/dao/EncounterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/repository/EncounterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dnd/InitiativeTracker/model/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +27,16 @@
     <expand />
     <select />
   </component>
+  <component name="ElmWorkspace">
+    <elmProjects />
+    <settings elmCompilerPath="" elmFormatPath="" elmTestPath="" isElmFormatOnSaveEnabled="false" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -183,7 +185,10 @@
       <workItem from="1582966193090" duration="5288000" />
       <workItem from="1583760538260" duration="5840000" />
       <workItem from="1583768603046" duration="274000" />
-      <workItem from="1583943073252" duration="1368000" />
+      <workItem from="1583943073252" duration="1963000" />
+      <workItem from="1585229144923" duration="1222000" />
+      <workItem from="1585306104384" duration="684000" />
+      <workItem from="1585310587762" duration="1174000" />
     </task>
     <servers />
   </component>
