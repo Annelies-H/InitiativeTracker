@@ -3,7 +3,6 @@ package com.dnd.InitiativeTracker.model;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.mockito.Mockito.mock;
 
 public class EncounterTest {
