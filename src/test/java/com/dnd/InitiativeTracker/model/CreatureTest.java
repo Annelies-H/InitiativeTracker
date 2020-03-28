@@ -21,7 +21,7 @@ public class CreatureTest {
         Creature zero = new Creature();
         Creature[] creatures = {ten, fifteen, anotherTen, six, zero};
         Arrays.sort(creatures);
-        Creature[] expected = {zero, six, ten, anotherTen, fifteen};
+        Creature[] expected = {fifteen, ten, anotherTen, six, zero};
         assertArrayEquals(expected, creatures);
     }
 

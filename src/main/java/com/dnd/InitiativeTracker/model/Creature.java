@@ -50,7 +50,7 @@ public class Creature implements Comparable<Creature> {
 //Comparison
     @Override
     public int compareTo(Creature otherCreature) {
-        return initiative - otherCreature.initiative;
+        return otherCreature.initiative - initiative;
     }
 
     @Override
