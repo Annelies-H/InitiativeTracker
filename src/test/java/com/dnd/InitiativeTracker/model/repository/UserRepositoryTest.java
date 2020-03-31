@@ -1,5 +1,6 @@
-package com.dnd.InitiativeTracker.model;
+package com.dnd.InitiativeTracker.model.repository;
 
+import com.dnd.InitiativeTracker.model.User;
 import com.dnd.InitiativeTracker.model.repository.UserRepository;
 
 import org.junit.jupiter.api.Test;
