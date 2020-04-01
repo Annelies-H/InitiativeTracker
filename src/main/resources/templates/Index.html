@@ -5,9 +5,18 @@
     <title>Index</title>
 </head>
 <body>
-<h1>D20 Dice Tower</h1>
+<h1>Dice Tower</h1>
+<form id="selectDieForm" name="selectDieForm">
+    <input type="radio" id="d4" name="die" value="4"><label for="d4">D4</label>
+    <input type="radio" id="d6" name="die" value="6"><label for="d6">D6</label>
+    <input type="radio" id="d8" name="die" value="8"><label for="d8">D8</label>
+    <input type="radio" id="d10" name="die" value="10"><label for="d10">D10</label>
+    <input type="radio" id="d12" name="die" value="12"><label for="d12">D12</label>
+    <input type="radio" id="d20" name="die" value="20" checked="checked"><label for="d20">D20</label>
+    <input type="radio" id="d100" name="die" value="100"><label for="d100">D100</label>
+</form>
 <input type="text" placeholder="How many dice..." id="nrOfDice"
-       required pattern="[0-9]" title="How many dice do you want to throw?">
+       title="How many dice do you want to throw?">
 <button type="button" onclick="throwDiceButton();">Throw the dice!</button>
 <h2 id="resultHeader"></h2>
 <h2 id="result"></h2>
@@ -15,25 +24,25 @@
 <script>
     function throwDiceButton(){
         let nrOfDice = document.getElementById("nrOfDice").value;
-        let message = "";
-        let result = "";
+        let nrOfSides = document.querySelector('input[name = die]:checked').value;
         if (nrOfDice == 1) {
-            result = rollDice(1);
-            message = "The die has spoken:"
+            result = rollDice(1, nrOfSides);
+            message = "The D" + nrOfSides + " has spoken:";
         } else if (nrOfDice > 1) {
-            result = rollDice(nrOfDice);
-            message = nrOfDice + " dice have spoken:";
+            result = rollDice(nrOfDice, nrOfSides);
+            message = nrOfDice + "D" + nrOfSides + "s have spoken:";
         } else {
+            result = "";
             message = "The dice gods are angry with your request!!!"
         }
         document.getElementById("resultHeader").innerHTML = message;
         document.getElementById("result").innerHTML = result;
     }
 
-    function rollDice(nrOfRolls){
+    function rollDice(nrOfDice, nrOfSides){
         let result = 0;
-        for (i = 0; i < nrOfRolls; i++) {
-            result = result + Math.floor(Math.random() * 20) + 1;
+        for (i = 0; i < nrOfDice; i++) {
+            result = result + Math.floor(Math.random() * nrOfSides) + 1;
         }
         return  result
     }
