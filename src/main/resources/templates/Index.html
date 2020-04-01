@@ -30,13 +30,13 @@
             message = "The D" + nrOfSides + " has spoken:";
         } else if (nrOfDice > 1) {
             result = rollDice(nrOfDice, nrOfSides);
-            message = nrOfDice + "D" + nrOfSides + "s have spoken:";
+            message = "The "+ nrOfDice + "D" + nrOfSides + "s have spoken:";
         } else {
             result = "";
             message = "The dice gods are angry with your request!!!"
         }
-        document.getElementById("resultHeader").innerHTML = message;
-        document.getElementById("result").innerHTML = result;
+        document.getElementById("resultHeader").textContent = message;
+        document.getElementById("result").textContent = result;
     }
 
     function rollDice(nrOfDice, nrOfSides){
