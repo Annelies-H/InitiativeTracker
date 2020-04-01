@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<h1>D20 Dice Tower</h1>
+<input type="text" placeholder="How many dice..." id="nrOfDice"
+       required pattern="[0-9]" title="How many dice do you want to throw?">
+<button type="button" onclick="throwDiceButton();">Throw the dice!</button>
+<h2 id="resultHeader"></h2>
+<h2 id="result"></h2>
+
+<script>
+    function throwDiceButton(){
+        let nrOfDice = document.getElementById("nrOfDice").value;
+        let message = "";
+        let result = "";
+        if (nrOfDice == 1) {
+            result = rollDice(1);
+            message = "The die has spoken:"
+        } else if (nrOfDice > 1) {
+            result = rollDice(nrOfDice);
+            message = nrOfDice + " dice have spoken:";
+        } else {
+            message = "The dice gods are angry with your request!!!"
+        }
+        document.getElementById("resultHeader").innerHTML = message;
+        document.getElementById("result").innerHTML = result;
+    }
+
+    function rollDice(nrOfRolls){
+        let result = 0;
+        for (i = 0; i < nrOfRolls; i++) {
+            result = result + Math.floor(Math.random() * 20) + 1;
+        }
+        return  result
+    }
+
+</script>
+</body>
+</html>
